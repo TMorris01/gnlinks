@@ -6,15 +6,42 @@
     <title>Learning Center</title>
     <link rel="icon" type="image/png" href="fav.png">
     <link rel="stylesheet" href="css.css">
+    <style>
+        .settings-button {
+    background: var(--gradient-primary);
+    color: white;
+    border: 0;
+    padding: 0.875rem 1.5rem;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-sm);
+    min-width: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+.settings-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.settings-button:active {
+    transform: translateY(0);
+    box-shadow: var(--shadow-sm);
+}
+    </style>
 </head>
 <body>
     <center>
         <h1>Links</h1>
         <a href="1.12.html">
- <button style="border-radius: 25px; font-size: 20px; width: 100px; background-color: chartreuse;">Play 1.12</button>
+ <button class="settings-button">Play 1.12</button>
         </a>    
         <a href="esky.html">
-            <button style="border-radius: 25px; font-size: 20px; width: 150px; background-color: aquamarine;">Open Gn-Math</button>
+            <button class="settings-button">Open Gn-Math</button>
         </a>
         <a href="packs.html">
             <button style="border-radius: 25px; font-size: 20px; width: 200px; background-color: cadetblue;">WIP</button>
