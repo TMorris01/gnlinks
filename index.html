@@ -7,7 +7,49 @@
     <link rel="icon" type="image/png" href="fav.png">
     <link rel="stylesheet" href="css.css">
     <style>
-        .settings-button {
+        .dark-mode {
+    --primary: #FFA500;
+    --primary-hover: #FFA500;
+    --primary-light: rgba(255, 165, 0, 0.15);
+    --primary-lighter: rgba(255, 165, 0, 0.08);
+    --accent: #a855f7;
+    --accent-light: rgba(168, 85, 247, 0.15);
+    --success: #34d399;
+    --warning: #fbbf24;
+    --text: #f1f5f9;
+    --text-muted: #94a3b8;
+    --text-light: #64748b;
+    --bg: #0f172a;
+    --bg-secondary: #1e293b;
+    --surface: #1e293b;
+    --surface-hover: #334155;
+    --border: #334155;
+    --border-light: #475569;
+    --glass: rgba(30, 41, 59, 0.8);
+    --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.4);
+    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.5), 0 1px 2px -1px rgb(0 0 0 / 0.5);
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.5);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.6), 0 4px 6px -4px rgb(0 0 0 / 0.6);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.7), 0 8px 10px -6px rgb(0 0 0 / 0.7);
+    --shadow-glow: 0 0 20px rgba(252, 38, 81, 0.4);
+    --radius: 12px;
+    --radius-sm: 8px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
+    --gradient-primary: linear-gradient(135deg, #ffa500 0%, #ff8800 100%);
+    --gradient-accent: linear-gradient(135deg, #a855f7 0%, #9333ea 100%);
+    --gradient-surface: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+    .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.25rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+    .settings-button {
     background: var(--gradient-primary);
     color: white;
     border: 0;
@@ -34,8 +76,8 @@
 }
     </style>
 </head>
-<body>
-    <center>
+<body class="dark-mode">
+    <center class="header-content">
         <h1>Links</h1>
         <a href="1.12.html">
  <button class="settings-button">Play 1.12</button>
