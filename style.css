@@ -581,12 +581,12 @@ footer {
 }
 .control-button img {
     transition: transform 0.4s ease;
-    width: 24px;
-    height: 24px;
+    width: 6rem;
+    height: 6rem;
 }
 
 .control-button:hover img {
-    transform: rotate(40deg);
+    transform: rotate(20deg);
 }
 
 .control-button,
