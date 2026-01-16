@@ -13,8 +13,8 @@
             <div class="logo" style="font-size: 6rem">Links</div>
         </div>
         <div class="control-buttons">
-            <button id="question" class="control-button" title="Questions?">
-                <img src="https://static.thenounproject.com/png/3370196-200.png" alt="questions?">
+            <button id="suggestions" class="control-button" style="margin-left: auto" title="Suggestions?">
+                <img src="https://static.thenounproject.com/png/3370196-200.png" alt="suggestions?">
             </button>
         </div>
     </header>
@@ -28,5 +28,18 @@
             <button class="settings-button">Open Gn-Math</button>
         </a>
     </center>
+    const settings = document.getElementById('suggestions');
+    settings.addEventListener('click', () => {
+        document.getElementById('popupTitle').textContent = "Suggestions";
+        const popupBody = document.getElementById('popupBody');
+        popupBody.innerHTML = `
+        <button class="settings-button" onclick="darkMode()">Toggle Dark Mode</button>
+        <br><br>
+        <button class="settings-button" onclick="tabCloak()">Tab Cloak</button>
+        <br>
+        `;
+        popupBody.contentEditable = false;
+        document.getElementById('popupOverlay').style.display = "flex";
+    });
 </body>
 </html>
