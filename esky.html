@@ -765,11 +765,12 @@ footer {
     <footer>
         <div class="footer-links">
             <a href="#" onclick="loadDMCA(); return false;">DMCA</a>
-            <a href="#" onclick="showContact(); return false;">Minecraft</a>
+            <a href="#" onclick="showContact(); return false;">Contacts</a>
             <a href="#" onclick="loadPrivacy(); return false;">Privacy Policy</a>
             <a href="javascript:saveData()">Export Data</a>
             <a href="#" onclick="document.getElementById('importData').click(); return false;">Import Data</a>
             <input type="file" id="importData" style="display: none;" onchange="loadData(event)">
+            <a href="#" onclick="showMinecraft(); return false;">Minecraft</a>
             <a href="https://isaacrlambert01.github.io/gnlinks/" style="justify-content: right; text-align: right; text-decoration: underline">LINKS HOME PAGE</a>
         </div>
     </footer>
@@ -1397,10 +1398,20 @@ settings.addEventListener('click', () => {
 });
 
 function showContact() {
+    document.getElementById('popupTitle').textContent = "Contact";
+    const popupBody = document.getElementById('popupBody');
+    popupBody.innerHTML = `
+    <p>Discord: https://discord.gg/NAFw4ykZ7n</p>
+    <p>Email: gn.math.business@gmail.com</p>`;
+    popupBody.contentEditable = false;
+    document.getElementById('popupOverlay').style.display = "flex";
+}
+
+function showMinecraft() {
     document.getElementById('popupTitle').textContent = "Minecraft";
     const popupBody = document.getElementById('popupBody');
     popupBody.innerHTML = `
-    <button class="settings-button" onclick="window.location.href='https://isaacrlambert01.github.io/gnlinks/1.12.html'">Go to Minecraft</button>`;
+    <button class="settings-button" onclick="window.location.href='https://isaacrlambert01.github.io/gnlinks/1.12.html'">Go to<br>Minecraft</button>`;
     popupBody.contentEditable = false;
     document.getElementById('popupOverlay').style.display = "flex";
 }
