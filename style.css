@@ -99,19 +99,6 @@ header {
     gap: 1.5rem;
 }
 
-.header-center {
-  justify-content: center;
-}
-
-.big-logo {
-  font-size: 8rem;
-  font-weight: 900;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  text-align: center;
-  text-shadow: 0 0 25px rgba(255, 165, 0, 0.4);
-}
-
 .logo {
     font-size: 1.75rem;
     font-weight: 800;
