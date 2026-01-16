@@ -29,31 +29,5 @@
             <button class="settings-button">Open Gn-Math</button>
         </a>
     </center>
-    
-    <div id="popupOverlay">
-        <div class="popup">
-            <div class="popup-header">
-                <h3 id="popupTitle">Title</h3>
-                <button id="popupClose" onclick="closePopup()">×</button>
-            </div>
-            <div id="popupBody">
-                Content will be here
-            </div>
-        </div>
-    </div>
-
-    const settings = document.getElementById('suggestions');
-    settings.addEventListener('click', () => {
-        document.getElementById('popupTitle').textContent = "Suggestions?";
-        const popupBody = document.getElementById('popupBody');
-        popupBody.innerHTML = `
-        <button class="settings-button" onclick="darkMode()">Toggle Dark Mode</button>
-        <br><br>
-        <button class="settings-button" onclick="tabCloak()">Tab Cloak</button>
-        <br>
-        `;
-        popupBody.contentEditable = false;
-        document.getElementById('popupOverlay').style.display = "flex";
-    });
 </body>
 </html>
