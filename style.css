@@ -642,7 +642,10 @@ footer {
     box-shadow: var(--shadow-sm);
 }
 
-.button-text {
-    font-size: 0.9rem;
-    color: white;
+
+.button-label {
+    margin-top: 0.25rem;
+    font-size: 0.8rem;
+    color: white; 
+    pointer-events: none;
 }
