@@ -649,3 +649,22 @@ footer {
     color: white; 
     pointer-events: none;
 }
+
+.invisible-button {
+    /* Positioning */
+    position: fixed; /* Positions relative to the browser window */
+    bottom: 10px;    /* 10 pixels from the bottom edge */
+    right: 10px;     /* 10 pixels from the right edge */
+    z-index: 1000;   /* Ensures it sits above other elements */
+
+    /* Sizing (adjust as needed) */
+    width: 50px;
+    height: 50px;
+
+    /* Making it invisible */
+    opacity: 0;           /* Makes it completely transparent */
+    background: none;     /* Removes background color */
+    border: none;         /* Removes the border */
+    color: transparent;   /* Makes any text inside invisible */
+    cursor: pointer;      /* Keeps the hand icon cursor on hover, indicating interactivity */
+}
