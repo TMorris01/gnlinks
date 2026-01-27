@@ -653,8 +653,8 @@ footer {
 .invisible-button {
     /* Positioning */
     position: fixed; /* Positions relative to the browser window */
-    bottom: 10px;    /* 10 pixels from the bottom edge */
-    right: 10px;     /* 10 pixels from the right edge */
+    bottom: 0px;    /* 0 pixels from the bottom edge */
+    right: 0px;     /* 0 pixels from the right edge */
     z-index: 1000;   /* Ensures it sits above other elements */
 
     /* Sizing (adjust as needed) */
@@ -666,5 +666,5 @@ footer {
     background: none;     /* Removes background color */
     border: none;         /* Removes the border */
     color: transparent;   /* Makes any text inside invisible */
-    cursor: default;      /* Keeps the hand icon cursor on hover, indicating interactivity */
+    cursor: default;      /* Doesn't keep the hand icon cursor on hover, not indicating interactivity */
 }
